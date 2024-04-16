@@ -8,10 +8,15 @@ console.log(userInput1);
 let isCorrect = false;
 let userInput2 = readlineSyncModule.question();
 userInput2 = userInput2.trim();
-let compString = 'correct'
-console.log(userInput2)
+let compString = 'war'
 if (userInput2 == compString){
-    console.log('정답입니다.');
+    isCorrect = true;
 }else{
-    console.log('실패입니다.');
+    isCorrect = false;
+}
+
+if (isCorrect){
+    console.log('O')
+}else{
+    console.log('x')
 }
